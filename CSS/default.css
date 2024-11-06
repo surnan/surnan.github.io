@@ -1,4 +1,13 @@
+/* css/default.css */
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --blue1: rgb(114, 185, 232);
+    --blue2: rgb(58, 112, 154);
+    --whitesmoke: hsl(0, 0%, 96%);
+    --site-width: 1200;
+    --height: 550;
+}
 
 * {
     margin: 0;
@@ -8,68 +17,22 @@
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
-#header{
-    margin-top: 1rem;
+header, main, footer {
+    max-width: calc(var(--site-width) * 1px);
+    margin: auto;
+    background-color: var(--whitesmoke);
 }
 
-h1 {
-    font-size: 40px;
-}
+body {height: 100vw}
+h1 {font-size: 40px}
+a {color: black}
+hr {margin: 1rem 0}
 
-a {
-    color: black;
-}
 
-hr {
-    margin: 1rem 0;
-}
+.blue1 {    color: var(--blue1);}
+.blue2 {    color: var(--blue2);}
 
-:root {
-    --brown: hsl(14, 45%, 36%);
-    --rose-332: hsl(332, 51%, 32%);
-    --rose-330: hsl(330, 100%, 98%);
-    --rose-331: hsl(333, 71%, 92%);
-    --stone: hsl(30, 54%, 90%);
-    --whitesmoke: hsl(0, 0%, 96%);
-    --Cobalt-blue: hsl(234, 85%, 45%);
-    --Light-slate-blue: hsl(252, 100%, 67%);
-    --Persian-blue: hsla(241, 72%, 46%, 0);
-    --White: hsl(0, 0%, 100%);
-    --Pale-blue: hsl(221, 100%, 96%);
-    --Light-lavender: hsl(241, 100%, 89%);
-    --Dark-gray-blue: hsl(224, 30%, 27%);
-    --Light-gray: hsl(224, 75%, 84%);
-    --Black: hsl(0, 0%, 0%);
-
-    --Light-royal-blue: hsl(241, 81%, 54%);
-    --Royal-blue: hsla(241, 87%, 24%, 0.233);
-
-    --Light-red: hsl(0, 100%, 67%);
-    --Extra-Light-red: hsla(0, 100%, 67%, 0.111);
-
-    
-    --Orangey-yellow: hsl(39, 100%, 56%);
-    --Light-yellow: hsla(39, 100%, 56%, 0.128);
-    
-    --Green-teal: hsl(166, 100%, 37%);
-    --Light-Green: hsla(166, 100%, 37%, 0.172);
-    
-    
-    --Violet-blue: hsla(256, 72%, 46%, 1);
-    --Blue-2: rgb(33, 134, 202);
-    --Light-blue: rgba(78, 33, 202, 0.081);
-    --Site-width: 1200;
-    --Height: 550;
-}
-
-.lt-slate-blue-font {
-    color: var(---Light-slate-blue)
-}
-
-.cobalt-blue{
-    color: var(--Cobalt-blue);
-}
-
-.blue2 {
-    color: var(--Blue-2);
+.center {
+    text-align: center;
+    margin: auto;
 }

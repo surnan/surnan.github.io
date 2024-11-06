@@ -1,3 +1,7 @@
+/* css/main.css */
+
+@import './default.css';
+
 .center {
     text-align: center;
     margin: auto;
@@ -7,12 +11,20 @@ main {
     background-color: var(--whitesmoke);
     padding: 25px;
     height: 100vw;
-    max-width: 1200px;
-    margin: auto;
 }
 
 .thick-line{
     height: 4px;
     background-color: black;
     border: none;
+}
+
+#aboutMe {
+    padding: 1rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 5rem;
 }

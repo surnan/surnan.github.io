@@ -8,6 +8,7 @@ function loadIntro() {
     introSection.id = "intro-section";
     
     const aboutMe = document.createElement("p");
+    aboutMe.id = "aboutMe"
     aboutMe.textContent = aboutMeTxt;
 
     introSection.appendChild(aboutMe);
